@@ -15,8 +15,8 @@ class Recorder{
         $this->error = new ErrorCase();
 
         //-------读取配置文件
-        $this->inc->appid = '101879346';
-        $this->inc->appkey = 'de1acd19b6f35531fe8b7f7f3ca4fe95';
+        $this->inc->appid = 'APPID';
+        $this->inc->appkey = 'APPKEY';
         $this->inc->callback = 'http://yccpanda.com/';
         $this->inc->scope = 'get_user_info';
         $this->inc->errorReport = true;
