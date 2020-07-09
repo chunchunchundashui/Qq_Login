@@ -17,7 +17,7 @@ class Recorder{
         //-------读取配置文件
         $this->inc->appid = 'APPID';
         $this->inc->appkey = 'APPKEY';
-        $this->inc->callback = 'http://yccpanda.com/';
+        $this->inc->callback = '网站回调地址';
         $this->inc->scope = 'get_user_info';
         $this->inc->errorReport = true;
         $this->inc->storageType = 'file';
