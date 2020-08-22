@@ -15,12 +15,12 @@ class Recorder{
         $this->error = new ErrorCase();
 
         //-------读取配置文件
-        $this->inc->appid = 'APPID';
-        $this->inc->appkey = 'APPKEY';
-        $this->inc->callback = '网站回调地址';
-        $this->inc->scope = 'get_user_info';
-        $this->inc->errorReport = true;
-        $this->inc->storageType = 'file';
+        $this->appid = 'APPID';
+        $this->appkey = 'APPKEY';
+        $this->callback = '网站回调地址';
+        $this->scope = 'get_user_info';
+        $this->errorReport = true;
+        $this->storageType = 'file';
 
         if(empty($this->inc)){
             $this->error->showError("20001");
@@ -46,10 +46,10 @@ class Recorder{
     }
 
     public function readInc($name){
-        if(empty($this->inc->$name)){
+        if(empty($this->$name)){
             return null;
         }else{
-            return $this->inc->$name;
+            return $this->$name;
         }
     }
 
